@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="icons/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <section id="loadscreen" class="w-full h-[100vh] flex flex-wrap">
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-nihao" src="img/15.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-yasou" src="img/17.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-nihao" src="img/16.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-yasou" src="img/18.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-hi" src="img/13.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%]  relative">
+            <img class="w-full h-full  object-contain" src="img/12.webp" alt="">
+            <div class="w-full h-full bg-white absolute top-0 right-0 animate-ola"></div>
+        </figure>
+        <figure class="w-[33%]  h-[33%]  relative">
+            <img class="w-full h-full  object-contain" src="img/14.webp" alt="">
+            <div class="w-full h-full bg-white absolute top-0 right-0 animate-ola"></div>
+        </figure>
+        <figure class="w-[33%]  h-[33%] ">
+            <img class="w-full h-full  object-contain animate-salve" src="img/11.webp" alt="">
+        </figure>
+        <figure class="w-[33%]  h-[33%]  relative">
+            <img class="w-full h-full  object-contain animate-hola absolute bottom-0 left-0" src="img/10.webp" alt="">
+        </figure>
+    </section>
+    <!-- loading -->
+    <!-- loading -->
+    <!-- loading -->
+    <!-- loading -->
+    <!-- loading -->
+    <main class="w-full h-[100vh] overflow-y-scroll hidden flex-wrap overflow-x-hidden scrollbar-none ">
+        <section class="w-[100%] h-[180vh] lg:w-[auto] lg:h-[135vh] lg:flex-nowrap flex flex-wrap px-[30px]">
+            <div class="w-[100%] h-[50%] lg:w-[60vw] lg:h-[75%]  items-start flex flex-wrap">
+                <nav id="navigation" class="w-full h-[15%] flex justify-between lg:justify-start">
+                    <a class="w-[20%] h-full" href="">
+                        <figure class="w-full h-full">
+                            <img class="w-full h-full object-contain" src="img/1.png" alt="">
+                        </figure>
+                    </a>
+                    <a class="hidden lg:w-[20%] lg:h-full text-[18px]  font-pretendard capitalize text-[#395fd0] lg:flex justify-center items-center font-semibold"
+                        href="">municipalities</a>
+                    <div id="navdl" class="hidden relative lg:w-[20%] lg:h-full  lg:flex justify-end items-center">
+                        <a id="dlclick"
+                            class="font-pretendard font-semibold duration-[0.4s] w-[70%] h-[55%] flex items-center justify-center capitalize rounded-[10px] text-[white] bg-[#395fd0]"
+                            href="">download</a>
+                        <ul id="navdllink"
+                            class="z-[10] w-full duration-[0.4s] h-[0px] absolute top-[100%] left-0 bg-[#395fd0] rounded-[10px] overflow-hidden">
+                            <li class="w-full h-[50%] duration-[0.4s] hover:bg-[#a9eff6] "><a
+                                    class="hover:text-[#395fd0] w-full h-full flex justify-start ps-[20px] items-center text-[white] capitalize font-pretendard font-semibold"
+                                    href="">app store</a></li>
+                            <li class="w-full h-[50%] duration-[0.4s] hover:bg-[#a9eff6] "><a
+                                    class="hover:text-[#395fd0] w-full h-full flex justify-start ps-[20px] items-center text-[white] capitalize font-pretendard font-semibold"
+                                    href="">google play</a></li>
+                        </ul>
+                    </div>
+                    <div class="w-[10%] h-full flex items-center justify-center relative  lg:hidden">
+                        <i id="menuicon"
+                            class="bi bi-list text-[#395fd0] font-bold text-[22px] absolute z-[3000] cursor-pointer"></i>
+                    </div>
+                </nav>
+                <!-- click menu -->
+                <!-- click menu -->
+                <!-- click menu -->
+                <div id="clickmenu"
+                    class="w-[100%] h-[100%] fixed top-0 left-0 hidden justify-center items-center flex-wrap bg-white z-[11]">
+                    <ul class=" w-[40%] md:w-[20%] h-[auto] flex flex-wrap ">
+                        <li class="w-full flex justify-center items-center h-[80px] "><a
+                                class="w-[90%] h-[80%] rounded-[10px] flex justify-center items-center text-[#395fd0] duration-[0.4s]  hover:bg-gray-300 capitalize font-pretendard font-semibold"
+                                href="">municipalities</a></li>
+                        <li id="dlinmenu" class="w-full flex justify-center items-center h-[80px] "><a
+                                class="w-[90%] h-[80%] rounded-[10px] flex justify-center items-center bg-[#395fd0] text-white duration-[0.4s] hover:text-[#395fd0] hover:bg-[#a9eff0] capitalize font-pretendard font-semibold"
+                                href="">download</a></li>
+                        <li id="dropmenu" class="w-full h-[0px] duration-[0.4s]">
+                            <ul class="w-full h-full flex flex-wrap overflow-hidden rounded-[15px]">
+                                <li class="w-full h-[50%]"><a
+                                        class="w-full h-full bg-[#395fd0] font-semibold capitalize font-pretendard text-[white] duration-[0.4s] hover:bg-[#a9eff6] hover:text-[#395fd0] flex items-center justify-center"
+                                        href="">app store</a></li>
+                                <li class="w-full h-[50%]"><a
+                                        class="w-full h-full bg-[#395fd0] font-semibold capitalize font-pretendard text-[white] duration-[0.4s] hover:bg-[#a9eff6] hover:text-[#395fd0] flex items-center justify-center"
+                                        href="">google play</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- click menu -->
+                <!-- click menu -->
+                <!-- click menu -->
+                <h1 class="w-full h-[45%] content-start sm:content-center  flex flex-wrap">
+                    <p
+                        class="w-full h-[25%] md:h-[33%] justify-center lg:justify-start lg:w-[35%] lg:h-[50%] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] text-[#395fd0] font-switzer flex items-center font-bold ">
+                        It’s your</p>
+                    <div class="w-full h-[25%] md:h-[33%] lg:w-[60%] lg:h-[50%] relative">
+                        <p
+                            class="w-full h-full justify-center lg:justify-start  absolute top-0 left-0 text-[#395fd0] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] font-switzer flex items-center font-bold  animate-wordchanger1">
+                            city</p>
+                        <p
+                            class="w-full h-full justify-center lg:justify-start  absolute top-0 left-0 text-[#395fd0] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] font-switzer flex items-center font-bold  animate-wordchanger2">
+                            precinct,</p>
+                        <p
+                            class="w-full h-full justify-center lg:justify-start  absolute top-0 left-0 text-[#395fd0] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] font-switzer flex items-center font-bold  animate-wordchanger3">
+                            town,</p>
+                        <p
+                            class="w-full h-full justify-center lg:justify-start  absolute top-0 left-0 text-[#395fd0] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] font-switzer flex items-center font-bold  animate-wordchanger4">
+                            neighborhood,</p>
+                        <p
+                            class="w-full h-full justify-center lg:justify-start  absolute top-0 left-0 text-[#395fd0] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] font-switzer flex items-center font-bold  animate-wordchanger5">
+                            community</p>
+                    </div>
+                    <p
+                        class="w-full h-[25%] md:h-[33%]  justify-center lg:justify-start lg:h-[50%] text-[35px] md:text-[58px] lg:text-[55px] xl:text-[75px] text-[#395fd0] font-switzer flex items-center font-bold ">
+                        all in one app.</p>
+                </h1>
+                <div class="md:w-full  lg:w-[70%] lg:justify-start flex items-center md:justify-center  h-[15%]">
+                    <p
+                        class="md:w-[80%]  lg:w-[80%] lg:text-left items-center text-center h-[100%] lg:text-[18px]   flex justify-start font-pretendard font-semibold text-[20px] text-[#395fd0]">
+                        Inhabit is a platform that connects local residents, businesses and municipalities to cultivate
+                        a city that’s better together.</p>
+                </div>
+                <div class="w-full lg:w-[50%] h-[20%]  flex flex-wrap">
+                    <figure class="w-[50%] h-full flex flex-wrap justify-center items-center relative z-[10]">
+                        <a class=" w-[70%] h-[35%]" href="">
+                            <img class="w-full h-full object-contain" src="img/appstore.png" alt="">
+                        </a>
+                    </figure>
+                    <figure class="w-[50%] h-full flex flex-wrap justify-center items-center relative z-[10]">
+                        <a class=" w-[70%] h-[35%]" href="">
+                            <img class="w-full h-full object-contain" src="img/googleplay.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+            </div>
+            <!-- left div -->
+            <!-- left div -->
+            <!-- left div -->
+            <div class="w-[100%] h-[50%] lg:w-[1000px] lg:h-[1000px]  flex flex-wrap justify-center items-center  ">
+                <div
+                    class=" w-[420px] h-[270px] md:w-[600px] md:h-[600px] lg:w-full lg:h-full flex flex-wrap justify-center animate-rotate">
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[50%] rotate-[-45deg] h-full object-contain" src="img/2.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[50%] translate-y-[-25%] h-full object-contain" src="img/3.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[50%] rotate-[45deg] animate-cardrotate h-full object-contain"
+                            src="img/4.svg" alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-y-[50%] rotate-[90deg] h-full object-contain" src="img/5.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-y-[-50%] rotate-[-90deg] h-full object-contain" src="img/6.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[-50%] rotate-[-135deg] h-full object-contain" src="img/7.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[-50%] translate-y-[25%] h-full object-contain" src="img/8.svg"
+                            alt="">
+                    </figure>
+                    <figure class="w-[25%] h-[50%] ">
+                        <img class="w-full translate-x-[-50%] rotate-[135deg] h-full object-contain" src="img/9.svg"
+                            alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- section1 -->
+        <!-- section1 -->
+        <!-- section1 -->
+        <!-- section1 -->
+        <section
+            class="w-full h-[65vh] md:h-[100vh] md:py-[90px] rounded-3xl scrollbar scrollbar-none flex  flex-wrap  overflow-y-scroll ">
+
+
+            <div
+                class="w-[100%] h-[65vh] md:h-[40vh] lg:h-[100vh] flex flex-wrap  rounded-3xl  bg-[#dcf1f3] sticky top-[15%] px-[20px]">
+                <div class="lg:w-[50%] w-full relative  h-full flex items-center justify-center  flex-wrap">
+                    <div
+                        class="h-[50%] md:h-[35%] flex justify-start w-[30%] md:w-[20%] lg:h-[15%] absolute top-[-30%] md:top-[-20%] lg:top-[-13%] left-[0]">
+                        <figure class="w-full h-full">
+                            <img class="w-full h-full object-contain" src="img/20.png" alt="">
+                        </figure>
+                    </div>
+                    <article id="residents"
+                        class="duration-[0.5s] w-[95%] h-[90%] lg:w-[80%] lg:h-[60%] bg-white flex flex-wrap rounded-[30px]">
+                        <h2
+                            class="w-full h-[50%] flex items-center text-[#395fd0] font-switzer ps-[20px] font-bold text-[30px] md:justify-center md:text-[37px] lg:text-[45px]">
+                            Stay in the know, effortlessly.</h2>
+                        <p
+                            class="w-full h-[50%] flex items-start text-[#395fd0] font-switzer px-[20px] text-[12px] md:justify-center md:text-[17px]">
+                            Get local updates and discover neighborhood gems — all in one streamlined platform.
+                            Customizable & town specific, Inhabit a community portal designed with residents at the
+                            center. It's your town, right at your fingertips.</p>
+                    </article>
+                </div>
+                <div class="w-[50%] h-full hidden lg:flex items-center justify-center flex-wrap">
+                    <figure id="residentsimg" class="w-[90%] h-full flex">
+                        <img class="w-full h-full object-contain" src="img/19.png" alt="">
+                    </figure>
+                </div>
+            </div>
+
+            <!-- div1 -->
+            <!-- div1 -->
+            <!-- div1 -->
+            <div
+                class="w-[100%] h-[65vh] md:h-[55vh] lg:h-[100vh] flex flex-wrap   rounded-3xl  bg-[#1b4f4a] sticky top-[15%] px-[20px]">
+                <div class="w-[50%] h-full hidden lg:flex items-center justify-center">
+                    <figure class="w-[80%] h-[90%] rounded-[30px] overflow-hidden">
+                        <img class="w-full h-full" src="img/21.gif" alt="">
+                    </figure>
+                </div>
+                <div class="w-full lg:w-[50%] h-full flex items-center justify-center relative">
+                    <div
+                        class="w-[30%] md:w-[20%] h-[50%] md:h-[35%] lg:h-[15%] absolute top-[-25%] md:top-[-20%] lg:top-[-10%] right-0">
+                        <figure class="w-full h-full">
+                            <img class="w-full h-full object-contain " src="img/22.png" alt="">
+                        </figure>
+                    </div>
+                    <article class="w-[95%] h-[90%] flex flex-wrap content-center bg-white rounded-[30px]">
+                        <h2
+                            class="w-full h-[40%] md:h-[33%]   lg:h-[30%] flex items-center text-[#395fd0] text-[30px] font-switzer md:justify-center ps-[20px] font-bold md:text-[37px] lg:text-[45px]">
+                            Streamline engagement for stronger communities.
+                        </h2>
+                        <p
+                            class="w-full h-[40%] md:h-[33%]   lg:h-[25%] flex items-center text-[#395fd0] text-[12px] font-switzer px-[20px] md:text-[17px]">
+                            Keep your residents informed, engaged, and happy without the fuss of managing multiple
+                            platforms. From city council updates to emergency alerts, Inhabit centralizes all your
+                            communication needs. Reach your community effectively, so you can focus on what really
+                            matters—building a better city for everyone.
+                        </p>
+                        <div class="w-full h-[20%] md:h-[33%]   lg:h-[20%] flex items-center ps-[20px]">
+                            <a class="group relative w-[55%] h-[65%] md:w-[30%] overflow-hidden  md:h-[50%] flex items-center justify-center capitalize font-switzer text-[15px] rounded-[10px] text-[white] bg-[#395fd0]"
+                                href="">
+                                <p class="relative z-[5]">learn more</p>
+                                <div
+                                    class="w-[20%] relative z-[5] h-[50%] flex items-center justify-center overflow-hidden">
+                                    <i
+                                        class="bi bi-arrow-right ps-[5px] lg:group-hover:translate-y-[-100px] duration-[0.4s]"></i>
+                                </div>
+                                <div
+                                    class="w-[80px] h-[80px] duration-[0.4s] rounded-[50%] lg:group-hover:top-[-88%] lg:group-hover:w-[250px] lg:group-hover:h-[250px]  absolute top-[100%] left-[calc(50% - 80px)] bg-[#f36913]">
+
+                                </div>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <!-- div2 -->
+            <!-- div2 -->
+            <!-- div2 -->
+            <div
+                class="w-[100%] h-[65vh] md:h-[55vh] lg:h-[100vh] flex flex-wrap   rounded-3xl  bg-[#dcf1f3] sticky top-[15%] px-[20px]">
+                <div class="w-full lg:w-[50%] h-full  relative flex items-center justify-center  flex-wrap">
+                    <div
+                        class="w-[30%] md:w-[20%] h-[50%] md:h-[35%] lg:h-[15%] absolute top-[-25%] md:top-[-20%] lg:top-[-10%] left-[20%]   flex">
+                        <figure class="w-full h-full">
+                            <img class="w-full h-full object-contain" src="img/24.png" alt="">
+                        </figure>
+                    </div>
+                    <article class="w-[95%] h-[90%] lg:w-[80%] lg:h-[75%] bg-white flex flex-wrap rounded-[30px]">
+                        <h2
+                            class="w-full h-[50%] flex items-center text-[#395fd0] text-[30px] font-switzer ps-[20px] font-bold md:text-[37px] lg:text-[45px]">
+                            Affordable, localized outreach made simple.</h2>
+                        <p
+                            class="w-full h-[50%] flex items-start text-[#395fd0] text-[12px] font-switzer px-[20px] md:text-[17px] ">
+                            Say goodbye to expensive ads and complicated email lists. With Inhabit, your business gains
+                            instant visibility among local residents. Share your latest offerings, events, and
+                            promotions in an environment that's focused solely on your community. It's the smarter,
+                            simpler way to reach your target audience without breaking the bank.</p>
+                    </article>
+                </div>
+                <div class="w-[50%] h-full hidden lg:flex items-center justify-center flex-wrap">
+                    <figure class="w-[90%] h-full flex ">
+                        <img class="w-full h-full object-contain" src="img/23.png" alt="">
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- section2 -->
+        <!-- section2 -->
+        <!-- section2 -->
+        <!-- section2 -->
+        <section class="w-full h-[150vh] flex flex-wrap  px-[30px]">
+
+            <div class="w-full h-[20%] flex items-end py-[10px] justify-center lg:justify-start">
+                <p
+                    class="w-[50%] md:w-[25%] lg:w-[20%]  h-[25%] lg:h-[30%] flex items-center text-[12px] font-semibold md:text-[16px] lg:text-[20px] justify-center bg-[#395fd0] rounded-[5px] text-white font-pretendard">
+                    Simplicity, Realized.</p>
+            </div>
+            <div class="w-full h-[75%] flex justify-center">
+                <h3
+                    class="font-switzer text-center lg:text-left text-[32px] md:text-[55px]  lg:text-[70px] text-[#90abfa]">
+                    <span class="text-[#395fd0] font-medium ">One app, so many possibilities.</span>Inhabit makes it
+                    easier than ever for residents, small businesses, nonprofits and government departments to connect,
+                    share and engage — all in one place.
+                </h3>
+            </div>
+
+        </section>
+        <!-- section3 -->
+        <!-- section3 -->
+        <!-- section3 -->
+        <!-- section3 -->
+        <section id="imgspar" class="w-full h-[100vh] flex items-center justify-center overflow-hidden px-[30px]">
+            <div id="imgs" class="w-[95%] h-[95%] flex flex-wrap justify-between content-between">
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/25.jpg" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/26.png" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/27.jpg" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/28.png" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/29.jpg" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/30.png" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/31.jpg" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/32.png" alt="">
+                </figure>
+                <figure class="w-[33%] h-[32.5%] rounded-[15px] overflow-hidden">
+                    <img class="w-full h-full object-cover" src="img/33.png" alt="">
+                </figure>
+            </div>
+        </section>
+        <!-- section4 -->
+        <!-- section4 -->
+        <!-- section4 -->
+        <!-- section4 -->
+        <section id="sec4" class="w-full h-[150vh] flex flex-wrap justify-center content-between px-[15px] md:px-[30px]">
+
+
+            <div class="w-[80%] md:w-[75%] h-[30%] md:h-[25%] flex flex-wrap bg-[#1b4f4a] rounded-[30px]">
+                <div class="w-full h-[50%] flex justify-center items-center ">
+                    <p
+                        class="p-[8px] flex text-[20px] items-center font-pretendard capitalize font-bold justify-center rounded-[5px] bg-[#a9eff6] text-[#395fd0]">
+                        join
+                    </p>
+                </div>
+                <p
+                    class="px-[20px] w-full h-[50%] flex items-start justify-center text-center text-[18px] md:text-[28px] lg:text-[35px] font-switzer text-white font-semibold">
+                    Tap your local city to connect with your community in seconds.</p>
+            </div>
+
+
+            <div class="w-[80%] md:w-[75%] h-[30%] md:h-[25%] flex flex-wrap bg-[#f38dc9] rounded-[30px]">
+                <div class="w-full h-[50%] flex justify-center items-center ">
+                    <p
+                        class="p-[8px] flex text-[20px] items-center font-pretendard capitalize font-bold justify-center rounded-[5px] bg-[#a9eff6] text-[#395fd0]">
+                        connect
+                    </p>
+                </div>
+                <p
+                    class="px-[20px] w-full h-[50%] flex items-start justify-center text-center text-[18px] md:text-[28px] lg:text-[35px] font-switzer text-white font-semibold">
+                    Keep up with important news, events, and local businesses in real time.</p>
+            </div>
+
+
+            <div class="w-[80%] md:w-[75%] h-[30%] md:h-[25%] flex flex-wrap bg-[#395fd0] rounded-[30px]">
+                <div class="w-full h-[50%] flex justify-center items-center ">
+                    <p
+                        class="p-[8px] flex text-[20px] items-center font-pretendard capitalize font-bold justify-center rounded-[5px] bg-[#a9eff6] text-[#395fd0]">
+                        Simplicity, Realized.
+                    </p>
+                </div>
+                <p
+                    class="px-[20px] w-full h-[50%] flex items-start justify-center text-center text-[18px] md:text-[28px] lg:text-[35px] font-switzer text-white font-semibold">
+                    Tailor your local experience to enrich your daily life & engage with your community.</p>
+            </div>
+        </section>
+        <!-- section5 -->
+        <!-- section5 -->
+        <!-- section5 -->
+        <!-- section5 -->
+        <section class="w-[100%]  content-center h-[135vh] lg:w-[auto] lg:flex-nowrap flex flex-wrap px-[30px]">
+            <div
+                class="w-[100%]  h-[50%] lg:w-[60vw] lg:h-[75%] md:justify-center lg:justify-start content-end lg:content-center flex flex-wrap">
+                <div class="w-full h-[10%]  flex justify-center lg:justify-start items-center ">
+                    <p
+                        class="w-[40%] h-[80%] md:w-[20%] md:h-[60%] lg:w-[23%] lg:h-[50%] text-center font-switzer text-[14px] font-semibold flex justify-center items-center bg-[#395fd0] text-white capitalize rounded-[6px]">
+                        get connected</p>
+                </div>
+                <h2
+                    class="w-full h-[30%]  items-center justify-center text-center text-[30px] lg:w-[60%] md:text-center md:justify-center md:items-center md:text-[48px] md:h-[35%] lg:h-[45%] flex font-switzer font-bold text-[#395fd0] lg:text-[55px]">
+                    Your town is talking. Ready to dial in?
+                </h2>
+                <p
+                    class="text-[12px]  text-center w-full lg:w-[60%]  md:text-center md:justify-center md:items-center flex items-center h-[18%] text-[#395fd0] font-switzer md:text-[19px] font-semibold">
+                    Keep your finger on the pulse and connect with your community. Join the Inhabit today and enjoy a
+                    life that’s better connected.
+                </p>
+                <div class="w-full lg:w-[50%] h-[15%] flex flex-wrap">
+                    <div class="w-[50%] h-full flex items-center justify-center ">
+                        <a class="w-[60%] h-[60%] md:h-[55%] md:w-[65%] lg:w-[60%] lg:h-[50%] flex" href="">
+                            <img class="w-full h-full object-contain" src="img/appstore.png" alt="">
+                        </a>
+                    </div>
+                    <div class="w-[50%] h-full flex items-center justify-center ">
+                        <a class="w-[60%] h-[60%] md:h-[55%] md:w-[65%] lg:w-[60%] lg:h-[50%] flex" href="">
+                            <img class="w-full h-full object-contain" src="img/googleplay.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- leftdiv -->
+            <!-- leftdiv -->
+            <!-- leftdiv -->
+            <div
+                class="w-[100%] h-[35%]  md:h-[20%] lg:w-[1000px] lg:h-[1000px]  flex flex-wrap justify-center items-center  relative">
+                <div
+                    class="absolute translate-y-[60%] md:translate-y-[40%] lg:translate-y-[0px]  w-[420px] h-[420px] md:w-[600px] md:h-[600px]  lg:w-full lg:h-full flex flex-wrap justify-center">
+                    <div
+                        class="animate-rotate w-[420px] h-[420px] md:w-[600px] md:h-[600px]  lg:w-full lg:h-full flex flex-wrap justify-center">
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[50%] translate-y-[50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/34.jpg" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/35.png" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[50%] translate-y-[50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/36.png" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-y-[150%] ">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/37.png" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-y-[-50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/38.png" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[-50%] translate-y-[50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/39.png" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[-50%] translate-y-[100%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/40.jpg" alt="">
+                        </figure>
+                        <figure
+                            class="w-[105px] h-[105px] md:w-[150px] md:h-[150px] lg:w-[250px] lg:h-[250px] rounded-[50%] overflow-hidden  translate-x-[-50%] translate-y-[50%]">
+                            <img class="w-full h-full object-cover animate-rotate2 " src="img/26.png" alt="">
+                        </figure>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- section6 -->
+        <!-- section6 -->
+        <!-- section6 -->
+        <footer class="w-full h-[80vh] px-[30px] flex flex-wrap bg-[#ececec] relative z-[99999999]">
+            <div class="w-full md:w-[55%] lg:w-[45%] h-full flex flex-wrap ">
+                <figure class="w-full h-[20%] px-[24px]  flex items-end">
+                    <img class="w-[25%] h-[50%] object-contain" src="img/1.png" alt="">
+                </figure>
+                <p
+                    class="w-full px-[24px] h-[15%] text-[#395fd0] font-pretendard  text-[22px] flex items-center font-semibold">
+                    Sign up & stay in the know.</p>
+                <div class="w-full h-[30%] px-[24px] flex flex-wrap items-center ">
+                    <div class="w-full h-[50%] md:w-[75%] md:h-full flex items-center justify-center md:justify-start ">
+                        <input class="w-[90%] h-[80%] md:h-[40%] outline-0 rounded-[12px] px-[20px] font-pretendard"
+                            placeholder="Enter your email" type="text">
+                    </div>
+                    <div class="w-full h-[50%] md:w-[25%] md:h-full flex items-center justify-center">
+                        <button
+                            class="w-[90%] h-[80%] md:h-[40%] duration-[0.4s] hover:bg-[#a9eff6] hover:text-[#395fd0] font-semibold bg-[#395fd0] rounded-[12px]  text-white capitalize flex items-center justify-center">
+                            subscribe </button>
+                    </div>
+                </div>
+                <div class="w-full h-[35%] flex flex-wrap items-end md:ps-[48px] md:justify-start py-[24px] ">
+                    <a
+                        class="w-full md:w-[55%] md:h-[20%]  text-[20px] cursor-pointer flex items-center justify-center font-pretendard text-[#395fd0] font-semibold">pedramnae123@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+<script src="js/master.js"></script>
+
+</html>
